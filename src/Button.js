@@ -1,9 +1,9 @@
-import React, { Component } from "React";
+import React from "React";
 import PropTypes from "prop-types";
 
-const Button = props => {
-  <button onClick={props.onClick}>{props.children}</button>;
-};
+const Button = props => (
+  <button onClick={props.onClick}>{props.children}</button>
+);
 
 Button.defaultProps = {
   children: "Salvar vindo do defaultProps"
